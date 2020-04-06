@@ -80,28 +80,31 @@ function IsEmpty(){
             </tr>
             <tr>
                 <td></td>
-                <td><font color="red">*</font>Shoes Size<br>
-                <select id = "size" name="size">
-                    <option value = "36">36</option>
-                    <option value = "37">37</option>
-                    <option value = "38">38</option>
-                    <option value = "39">39</option>
-                    <option value = "40">40</option>
+                <td><font color="red">*</font>Shoes Size (Pick Exact Size)
+                &nbsp;&nbsp;&nbsp;<select id = "size" name="size" width="200">
+                    <option value = "35">Size 35</option>
+                    <option value = "36">Size 36</option>
+                    <option value = "37">Size 37</option>
+                    <option value = "38">Size 38</option>
+                    <option value = "39">Size 39</option>
+                    <option value = "40">Size 40</option>
                 </select></td>
                 <td></td>
             </tr>
             <tr>
                 <td></td>
-                <td><input id="insert" onclick="return IsEmpty();" type="submit" value="Place Order"/></td>
+                <td><br><input id="insert" onclick="return IsEmpty();" type="submit" value="Place Order" width="100"/></td>
                 <td></td>
             </tr>
             <tr>
                 <td></td>
-                <td>Note: Kindly place only one order, the shoes color will be randomly selected, if you put 2 orders we may cancel your orders</td>
+                <td>Note: Kindly place only one order, the shoes color will be randomly selected, if you put 2 orders we may cancel your orders<br></td>
                 <td></td>
             </tr>
         </table>
 </form>    
-                </center>
+<hr width="50%">
+Smart Shoes Store, Copyright © 2020<br>
+</center>
     </body>
 </html>

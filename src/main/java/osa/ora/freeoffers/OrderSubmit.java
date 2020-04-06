@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "OrderSubmit", urlPatterns = {"/OrderSubmit"})
 public class OrderSubmit extends HttpServlet {
-    public static int COUNTER=33226;
+    public static int COUNTER=33826;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
