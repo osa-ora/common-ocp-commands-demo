@@ -46,12 +46,12 @@ function IsEmpty(){
             </tr>
             <tr>
                 <td></td>
-                <td><img src="images/1.jpg" width="400"><img src="images/2.jpg" width="400"></td>
+                <td><img src="images/4.jpg" width="400"><img src="images/1.jpg" width="400"></td>
                 <td></td>
             </tr>
             <tr>
                 <td></td>
-                <td><img src="images/3.jpg" width="400"><img src="images/4.jpg" width="400"></td>
+                <td><img src="images/2.jpg" width="400"><img src="images/3.jpg" width="400"></td>
                 <td></td>
             </tr>
             <tr>
@@ -104,7 +104,7 @@ function IsEmpty(){
         </table>
 </form>    
 <hr width="50%">
-Smart Shoes Store, Copyright © 2020<br>
+Smart Shoes Store, Copyright Â© 2020<br>
 </center>
     </body>
 </html>
