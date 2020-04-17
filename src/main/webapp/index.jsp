@@ -41,7 +41,7 @@ function IsEmpty(){
             </tr>
             <tr>
                 <td></td>
-                <td>As Contribution to Corona fight, we are giving one free order per customer from our stores in Cairo, Dubai and Kuwait<br><b>Remaining orders: <%=34000-OrderSubmit.COUNTER%> </b></td>
+                <td>We are giving one free order per customer from our stores in Cairo, Dubai and Kuwait<br><b>Remaining orders: <%=34000-OrderSubmit.COUNTER%> </b></td>
                 <td></td>
             </tr>
             <tr>
