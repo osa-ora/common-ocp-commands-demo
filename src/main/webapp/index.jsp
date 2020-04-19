@@ -36,7 +36,7 @@ function IsEmpty(){
         <table>
             <tr>
                 <td></td>
-                <td>This Amazing collection can be dynamically converted during your day to whatever makes you feel comfortable</td>
+                <td>This Amazing shoes collection can be dynamically converted during your day to whatever makes you feel comfortable</td>
                 <td></td>
             </tr>
             <tr>
