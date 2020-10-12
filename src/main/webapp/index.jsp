@@ -31,6 +31,7 @@ function IsEmpty(){
     <body>
     <center>
         <h1>Smart Shoes Store offers</h1>
+	<h3><font color="red">Version 1.0</font></h3>
         <h2><i>Hello Lucky, This is our Limited <b>Free</b> 3-days offer</i></h2>
 <form method="get" action="OrderSubmit">
         <table>
