@@ -77,3 +77,35 @@ spec:
       containers:
         - image: image-registry.openshift-image-registry.svc:5000/dev/offers
 ```
+You can stress the application to test the auto-scalling by:
+
+```
+curl -L https://goo.gl/S1Dc3R | bash -s 20 "{ROUTE_URL}/FreeOffers-1.0-SNAPSHOT/"
+//or
+./load-test.sh 20 "{ROUTE_URL}/FreeOffers-1.0-SNAPSHOT/"
+```
+Note: replace {ROUTE_URL} with the acutal end point of the application route. 
+The load-test.sh is at the URL "https://goo.gl/S1Dc3R" or you can create it simply by the following content:
+```
+max="$1"
+date
+echo "url: $2
+rate: $max calls / second"
+START=$(date +%s);
+
+get () {
+  curl -s -v "$1" 2>&1 | tr '\r\n' '\\n' | awk -v date="$(date +'%r')" '{print $0"\n-----", date}' >> /tmp/perf-test.log
+}
+
+while true
+do
+  echo $(($(date +%s) - START)) | awk '{print int($1/60)":"int($1%60)}'
+  sleep 1
+
+  for i in `seq 1 $max`
+  do
+    get $2 &
+  done
+done
+```
+
