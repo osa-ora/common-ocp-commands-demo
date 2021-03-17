@@ -38,6 +38,7 @@ oc set resources dc/offers --limits=cpu=400m,memory=512Mi --requests=cpu=2m,memo
 
 oc autoscale dc/offers --min 1 --max 3 --cpu-percent=40 -n dev
 ```
+This will create a HorizontalPodAutoscaler object with the target CPU and pod limits (CPU here is the average across all pods), to change this to memory, edit the HorizontalPodAutoscaler yaml file and change it to memory instead of CPU as currently this cannot be set by the oc command.  
 
 To add readiness and liveness probes
 ```
