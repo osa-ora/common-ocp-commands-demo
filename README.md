@@ -11,8 +11,8 @@ oc new-app jws31-tomcat8-basic-s2i -n dev -p SOURCE_REPOSITORY_URL=https://githu
 
 oc logs -f bc/offers -n dev
 
-oc expose svc/offers -n dev
 ```
+Acces the application using: Route_URL/FreeOffers-1.0-SNAPSHOT
 
 To define an environemnt variable while deploying add -e with the required environment variable e.g. test="Hello"
 ```
