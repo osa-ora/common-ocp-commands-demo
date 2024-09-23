@@ -7,7 +7,7 @@ To Deploy on Openshift:
 ```
 oc new-project dev
 
-oc new-app jws31-tomcat8-basic-s2i -n dev -p SOURCE_REPOSITORY_URL=https://github.com/osa-ora/SampleOffer -p SOURCE_REPOSITORY_REF=master -p CONTEXT_DIR="" -p APPLICATION_NAME=offers
+oc new-app jws31-tomcat8-basic-s2i -n dev -p SOURCE_REPOSITORY_URL=https://github.com/osa-ora/common-ocp-commands-demo -p SOURCE_REPOSITORY_REF=master -p CONTEXT_DIR="" -p APPLICATION_NAME=offers
 
 oc logs -f bc/offers -n dev
 
@@ -16,7 +16,7 @@ Acces the application using: Route_URL/FreeOffers-1.0-SNAPSHOT
 
 To define an environemnt variable while deploying add -e with the required environment variable e.g. test="Hello"
 ```
-oc new-app jws31-tomcat8-basic-s2i -n dev -p SOURCE_REPOSITORY_URL=https://github.com/osa-ora/SampleOffer -p SOURCE_REPOSITORY_REF=master -p CONTEXT_DIR="" -p APPLICATION_NAME=offers -e test="Hello"
+oc new-app jws31-tomcat8-basic-s2i -n dev -p SOURCE_REPOSITORY_URL=https://github.com/osa-ora/common-ocp-commands-demo -p SOURCE_REPOSITORY_REF=master -p CONTEXT_DIR="" -p APPLICATION_NAME=offers -e test="Hello"
 ```
 To create config map and attach it to the application:
 ```
